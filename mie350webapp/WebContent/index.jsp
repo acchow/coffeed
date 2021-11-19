@@ -4,7 +4,7 @@
 
 <html lang="en">
 <head>
-<title>Cof-feed</title>
+<title>Cof-feed!!</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -38,10 +38,10 @@
 				<h1>Welcome to Cof-feed!</h1>
 				<p>We're here to connect users with the best coffee experiences 
 				in Toronto. Whether this be for coffee beans, cafes or coffee accessories 
-				(e.g., machines),¡°Cof-feed¡± (i.e, coffee feed,) displays an interactive feed 
+				(e.g., machines),ï¿½ï¿½Cof-feedï¿½ï¿½ (i.e, coffee feed,) displays an interactive feed 
 				of coffee-related resources that allows coffee lovers to explore, recommend 
 				and learn from the Toronto coffee community. With so many options and varieties 
-				it is often challenging to find the best coffee. ¡°Cof-feed¡± aims to act as a 
+				it is often challenging to find the best coffee. ï¿½ï¿½Cof-feedï¿½ï¿½ aims to act as a 
 				comprehensive guide for all users by providing reviews, recommendations and 
 				opinions from like-minded individuals, and helping to explore the coffee 
 				options Toronto has to offer.</p>
