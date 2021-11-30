@@ -22,29 +22,29 @@ public class LoginController extends HttpServlet {
 			throws ServletException, java.io.IOException {
 
 		/**
-		 * Retrieve the entered username and password from the login.jsp form.
+		 * Retrieve the entered email and password from the login.jsp form.
 		 */
-		Member member = new Member();
-		member.setUsername(request.getParameter("un"));
-		member.setPassword(request.getParameter("pw"));
+		User user = new User();
+		user.setEmail(request.getParameter("un")); //sign in with email 
+		user.setPw(request.getParameter("pw"));
 
 		try {
 			/**
 			 * Try to see if the member can log in.
 			 */
-			member = MemberDao.login(member);
+			user = UserDao.login(user);
 
 			/**
 			 * If the isValid value is true, assign session attributes to the
 			 * current member.
 			 */
-			if (member.isValid()) {
+			if (user.valid()) {
 
 				HttpSession session = request.getSession(true);
-				session.setAttribute("currentSessionmember", member);
-				session.setAttribute("username", member.getUsername());
-				session.setAttribute("firstname", member.getFirstName());
-				session.setAttribute("lastname", member.getLastName());
+				session.setAttribute("currentSessionmember", user);
+				session.setAttribute("email", user.getEmail());
+				session.setAttribute("firstname", user.getFName());
+				session.setAttribute("lastname", user.getLName());
 				/**
 				 * Redirect to the members-only home page.
 				 */

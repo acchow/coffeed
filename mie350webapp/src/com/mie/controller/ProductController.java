@@ -12,9 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.mie.dao.ProductDao;
-import com.mie.dao.StudentDao;
 import com.mie.model.Product;
-import com.mie.model.Student;
 
 public class ProductController extends HttpServlet {
 	/**
@@ -63,7 +61,8 @@ public class ProductController extends HttpServlet {
 			dao.unsaveProduct(productId, userID);
 			forward = WISHLIST;
 			request.setAttribute("Products", dao.getAllProducts());
-		} else if (action.equalsIgnoreCase("wishlist")) {
+		} 
+		else if (action.equalsIgnoreCase("wishlist")) {
 			forward = WISHLIST;
 			request.setAttribute("Products", dao.getAllProducts());
 		} 

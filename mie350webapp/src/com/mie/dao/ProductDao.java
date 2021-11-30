@@ -13,7 +13,7 @@ import com.mie.util.DbUtil;
 
 public class ProductDao {
 	/**
-	 * This class handles all of the Student-related methods
+	 * This class handles all of the product-related methods
 	 * (add/update/delete/get).
 	 */
 

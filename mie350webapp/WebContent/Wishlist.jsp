@@ -49,7 +49,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach items="${Products}" var="product">
+						<c:forEach items="${ProductDao.getAllProducts()}" var="product">
 							<tr>
 								<td align="center"><c:out value="${product.getProductName()}" /></td>
 								<td align="center"><c:out value="${product.getBrandName()}" /></td>
