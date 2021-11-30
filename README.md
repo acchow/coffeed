@@ -1,4 +1,2 @@
 # coffeed
-test - ali git push
-test - natalie git push
-test - leah git push
+interactive consumer information site for coffee enthusiasts in Toronto :) 
