@@ -6,7 +6,7 @@
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.jsp"> <img src="img/Logo.jpg" width = "10%"> Cof-feed </a>
+		<a class="navbar-brand" href="index.jsp"> <img src="img/Logo.jpg" width = "10%"> Cof-feed </a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
@@ -27,6 +27,7 @@
 								CSS Tutorial</a></li>
 					</ul></li>
 				<li><a href="contact.jsp">Contact</a></li>
+				<li><a href="Wishlist.jsp">Wishlist</a></li>
 			</ul>
 			<!-- The following code can be added to include a Login button to the right-hand side of the navbar-->
 			<ul class="nav navbar-nav navbar-right">

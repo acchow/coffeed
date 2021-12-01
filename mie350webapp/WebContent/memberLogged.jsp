@@ -8,13 +8,13 @@
 <%
 	session = request.getSession();
 	System.out.println(session);
-	if (session.getAttribute("username") == null) {
+	if (session.getAttribute("email") == null) {
 		response.sendRedirect("login.jsp");
 	}
 %>
 
 <head>
-<title>MIE350 Sample Web App - Members-Only Home Page</title>
+<title>Coffeed - Users-Only Home Page</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -38,16 +38,16 @@
 	<%@ include file="navbar_loggedin.jsp"%>
 
 	<%
-		Member member = (Member) session.getAttribute("currentSessionUser");
+		User member = (User) session.getAttribute("currentSessionUser");
 
-		String username = (String) session.getAttribute("username");
-		String firstname = (String) session.getAttribute("firstname");
-		String lastname = (String) session.getAttribute("lastname");
+		String email = (String) session.getAttribute("email");
+		String firstname = (String) session.getAttribute("fname");
+		String lastname = (String) session.getAttribute("fname");
 	%>
 
 	<div class="container-fluid text-center">
 		<div class="row content">
-			<%@ include file="sidebar_loggedin.jsp"%>
+			<%/*@include file="sidebar_loggedin.jsp"*/%>
 			<div class="col-sm-8 text-left">
 
 				<h1>

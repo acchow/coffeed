@@ -30,9 +30,9 @@
 	<%@ include file="navbar.jsp"%>
 
 	<%
-		Member member = (Member) session.getAttribute("currentSessionUser");
+		User member = (User) session.getAttribute("currentSessionUser");
 
-		String username = (String) session.getAttribute("username");
+		String email = (String) session.getAttribute("email");
 		String firstname = (String) session.getAttribute("firstname");
 	%>
 
