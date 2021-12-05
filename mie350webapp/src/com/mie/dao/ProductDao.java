@@ -61,7 +61,8 @@ public class ProductDao {
 				product.setBrandName(rs.getString("BrandName"));
 				products.add(product);
 			}
-		} catch (SQLException e) {
+		} 
+		catch (SQLException e) {
 			e.printStackTrace();
 		}
 

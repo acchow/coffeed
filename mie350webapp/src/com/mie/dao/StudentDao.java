@@ -90,6 +90,7 @@ public class StudentDao {
 		 */
 		List<Student> students = new ArrayList<Student>();
 		try {
+			connection = DbUtil.getConnection();
 			Statement statement = connection.createStatement();
 			// System.out.println("getting students from table");
 			ResultSet rs = statement.executeQuery("select * from students");

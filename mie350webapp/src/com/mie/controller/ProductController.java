@@ -1,6 +1,12 @@
 package com.mie.controller;
 
 import java.io.IOException;
+import java.io.*;  
+import javax.servlet.*;  
+import javax.servlet.http.*;  
+import java.sql.*;  
+
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -40,18 +46,14 @@ public class ProductController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-
-		/**
-		 * This class retrieves the appropriate 'action' found on the JSP pages:
-		 * 
-		 * - delete will direct the servlet to let the user delete a student in
-		 * the database. - insert will direct the servlet to let the user add a
-		 * new student to the database. - edit will direct the servlet to let
-		 * the user edit student information in the database. - listStudent will
-		 * direct the servlet to the public listing of all students in the
-		 * database. - listStudentAdmin will direct the servlet to the admin
-		 * listing of all students in the database.
-		 */
+		
+		
+		
+		request.setAttribute("Products", dao.getAllProducts());
+		RequestDispatcher view = request.getRequestDispatcher("Wishlist.jsp");
+		view.forward(request, response);
+		
+		
 		String forward = "";
 		String action = request.getParameter("action");
 
@@ -67,8 +69,8 @@ public class ProductController extends HttpServlet {
 			request.setAttribute("Products", dao.getAllProducts());
 		} 
 
-		RequestDispatcher view = request.getRequestDispatcher(forward);
-		view.forward(request, response);
+		//RequestDispatcher view = request.getRequestDispatcher(forward);
+		//view.forward(request, response);
 	}
 
 	
