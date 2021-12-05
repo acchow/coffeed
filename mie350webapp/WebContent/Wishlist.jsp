@@ -28,17 +28,18 @@
 <body>
 
 	<%@ include file="navbar.jsp"%>
-
+<%@ include file="navbar2.jsp"%>
 	<div class="container-fluid text-center">
 		<div class="row content">
 			<div class="col-sm-2 sidenav">
 				<!-- You can put left sidebar links here if you want to. -->
 			</div>
 			<div class="col-sm-8 text-left">
-				<h1>MY Products</h1>
+				<h1>My Products</h1>
 
 				<table border=1 class="sortable" style="width:100%">
 				<thead>
+				
 						<tr>
 							<th>Product</th>
 							<th>Brand</th>
@@ -47,8 +48,23 @@
 							<th>Rating</th>
 							<th>Link</th>
 						</tr>
+				
+						
+						<li>
+							Ground Coffee, Lavazza, $10.90
+						</li>
+						<li>
+							Coffee Beans, Lavazza, $12.99
+						</li>
+						<li>
+							Red Moka Pot, Bialetti, $49.99
+						</li>
+						<li>
+							Coffee Filters, Life Brand, $2.99
+						</li>
 					</thead>
-					<tbody>
+					<tbody>	
+										
 						<c:forEach items="${ProductDao.getAllProducts()}" var="product">
 							<tr>
 								<td align="center"><c:out value="${product.getProductName()}" /></td>
@@ -65,19 +81,22 @@
 					</tbody>
 				</table>
 				
-				<h1>MY Shops</h1>
+				<h1>My Shops</h1>
+				
+					<li>
+						Starbucks, 1090 Bay Street
+					</li>
+					<li>
+						Mos Mos, 105 College Street
+					</li>
+					<li>
+						Jimmy's Coffee, 150 McCaul Street
+					</li>
+
 
 				<table border=1 class="sortable" style="width:100%">
 				<thead>
-						<tr>
-							<th>Shop</th>
-							<th>Brand</th>
-							<th>Location</th>
-							<th>Description</th>
-							<th>Rating</th>
-							<th>Website</th>
-							<th>Instagram</th>
-						</tr>
+
 					</thead>
 					<tbody>
 						<c:forEach items="${Shops}" var="shop">

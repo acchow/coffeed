@@ -7,6 +7,14 @@
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
+	
+	<servlet>
+		<description></description>
+		<display-name>ProductController></display-name>
+		<servlet-name>ProductController></servlet-name>
+		<servlet-class>com.mie.controller.ProductController</servlet-class>
+	</servlet>
+	
 	<servlet>
 		<description></description>
 		<display-name>StudentController</display-name>

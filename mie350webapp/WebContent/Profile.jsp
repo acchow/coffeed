@@ -41,6 +41,7 @@
 </head>
 <body>
 <%@ include file="navbar.jsp"%>
+<%@ include file="navbar2.jsp"%>
 
 	<div class="container-fluid text-center">
 		<div class="row content">
@@ -48,8 +49,10 @@
 				<!-- You can put left sidebar links here if you want to. -->
 			</div>
 			<div class="col-sm-8 text-left">
-				<h1>Profile Settings</h1>
-				Hi! This is your Cof-feed Profile. Feel free to edit/ update your profile. <br /> <br />
+				<h1><i>Profile Settings</i></h1>
+		
+				<h2>Hi, Ali!</h2>
+				This is your Cof-feed Profile. Feel free to edit/ update your profile. <br /> <br />
 				
 				<center>
 				<img src="img/profile_picture.jpg" width="15%"> <br><br>

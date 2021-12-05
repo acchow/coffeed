@@ -26,7 +26,7 @@
 <body>
 
 	<%@ include file="navbar.jsp"%>
-
+<%@ include file="navbar2.jsp"%>
 
 
 	<div class="container-fluid text-center">
@@ -38,13 +38,20 @@
 				<h1>Welcome to Cof-feed!</h1>
 				<p>We're here to connect users with the best coffee experiences 
 				in Toronto. Whether this be for coffee beans, cafes or coffee accessories 
-				(e.g., machines),��Cof-feed�� (i.e, coffee feed,) displays an interactive feed 
+				(e.g., machines),Cof-feed (i.e, coffee feed,) displays an interactive feed 
 				of coffee-related resources that allows coffee lovers to explore, recommend 
 				and learn from the Toronto coffee community. With so many options and varieties 
-				it is often challenging to find the best coffee. ��Cof-feed�� aims to act as a 
+				it is often challenging to find the best coffee. Cof-feed aims to act as a 
 				comprehensive guide for all users by providing reviews, recommendations and 
 				opinions from like-minded individuals, and helping to explore the coffee 
 				options Toronto has to offer.</p>
+				<h1>Who We Are</h1>
+				<p>We are Amanda, Natalie, Emma, Emre, Ali and Leah, a team of 6 industrial engineering passionate about coffee! We've designed and 
+				implemented this website in an effort to bring our passion for coffee experiences in our
+				software engineering course at the University of Toronto. For this project we combined
+				several software engineering methodologies and integrated UI/UX design principles to provide
+				the best experience for our users. We hope you enjoy!
+				</p>
 				<hr>
 				<h3>Connecting you with the best coffee experiences in Toronto</h3>
 				<p>Explore: 
